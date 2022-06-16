@@ -1,0 +1,24 @@
+body {
+    background-image: url("pngtree.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    margin-top: 250px;
+    margin-left: 300px;
+
+}
+
+#b1 {
+    font-size: x-large;
+}
+
+#t1 {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#t2 {
+    width: 60px;
+    height: 30px;
+}
