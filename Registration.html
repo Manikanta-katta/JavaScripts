@@ -1,0 +1,77 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="Registration.css">
+    <script src="Registration.js"></script>
+
+    <title>Welcome To Registration Form</title>
+</head>
+
+<body class="content">
+
+    <div id="main">
+        <div class="h-tag">
+            <h2>Create Your Account</h2>
+        </div>
+
+        <div class="login">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                    <td align="right">Enter Name :</td>
+                    <td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Enter Email ID :</td>
+                    <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+                </tr>
+
+                <tr>
+                    <td align="right"> Gender :</td>
+                    <td><input type="radio" id="t6" class="tr" name="gender" value="Male" />Male <input type="radio"
+                            id="t7" name="gender" value="Female" />FeMale</td>
+                </tr>
+
+                <tr>
+                    <td align="right">Enter Username :</td>
+                    <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Enter Password :</td>
+                    <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Enter Confirm Password :</td>
+                    <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
+                </tr>
+                <td align="right"> course :</td>
+                <td> <select>select Course
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>JavaScript</option>
+                    </select>
+
+
+                </td>
+                </tr>
+                <tr>
+                    <td align="right">Address :</td>
+                    <td><input type="text" placeholder="Enter Address" id="t8" class="tl" /></td>
+                </tr>
+                <tr>
+                    <td> <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" /></td>
+                    <td>
+
+                        <input type="submit" value="Signup" class="btn" onclick="registration()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
