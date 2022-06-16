@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+    <link href="callbackfunction.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <form>
+        <h1 style="color:rgb(34, 34, 32)">Hello </h1>
+
+        <h2 style="color:rgb(29, 29, 28)"> Well Come To My Page</h2>
+        <h3 style="color:rgb(183, 118, 22)">Thank you for visiting our page</h3>
+
+    </form>
+    <script>
+        function showData(name, surname) {
+            alert(' Hello ' + name + " " + surname);
+        }
+        function getData(callback) {
+            var name = prompt(" Welcome please enter \n What is your name?");
+            var surname = prompt(" Enter your surname...");
+            callback(name, surname);
+        }
+
+        getData(showData);
+    </script>
+</body>
+
+
+
+</html>
