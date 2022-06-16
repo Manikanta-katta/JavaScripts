@@ -1,0 +1,85 @@
+<html>
+
+<head class="nav">
+    <link rel="stylesheet" href="timezone.css" />
+    <h1>Countries Timezone</h1>
+
+</head>
+
+<body>
+
+    <span id="ct">TimeZone here</span><br>
+
+    <form name="f1">
+        <select name="tz" id="t1" onChange="display_TZ()"></select>
+    </form>
+    <script>
+        function display_TZ() {
+
+            tz = f1.tz.options[f1.tz.options.selectedIndex].value
+            str = new Date().toLocaleString("en-NZ", { timeZone: tz, timeZoneName: "short" })
+            document.getElementById('ct').innerHTML = str + "," + tz
+            display_c()
+        }
+        function display_c() {
+            refresh = 1000
+            mytime = setTimeout('display_TZ()', refresh)
+        }
+
+        var my_timezones = [
+            'Africa/El_Aaiun',
+            'Africa/Windhoek',
+            'America/Adak',
+            'America/Fortaleza',
+            'America/Glace_Bay',
+            'America/Godthab',
+            'America/Goose_Bay',
+            'America/Grand_Turk',
+            'America/Grenada',
+            'America/Scoresbysund',
+            'America/Sitka',
+            'America/St_Barthelemy',
+            'America/St_Johns',
+            'America/St_Kitts',
+            'America/St_Lucia',
+            'Antarctica/Mawson',
+            'Antarctica/McMurdo',
+            'Asia/Gaza',
+            'Asia/Hebron',
+            'Asia/Ho_Chi_Minh',
+            'Atlantic/Canary',
+            'Atlantic/Cape_Verde',
+            'Atlantic/Faroe',
+            'Australia/Lord_Howe',
+            'Australia/Melbourne',
+            'Australia/Perth',
+            'Australia/Sydney',
+            'Europe/Amsterdam',
+            'Europe/Andorra',
+            'Europe/Athens',
+            'Europe/Belgrade',
+            'Pacific/Norfolk',
+            'Pacific/Noumea',
+            'Pacific/Pago_Pago',
+            'Pacific/Wake',
+            'Pacific/Wallis',
+            'UTC'
+
+
+        ]
+
+        for (i = 0; i < my_timezones.length; i++) {
+            addOption(document.f1.tz, my_timezones[i], my_timezones[i])
+        }
+
+        function addOption(selectbox, text, value) {
+            var optn = document.createElement("OPTION")
+
+            optn.text = text
+            optn.value = value
+            selectbox.options.add(optn)
+        }
+    </script>
+</body>
+
+</html>
