@@ -1,0 +1,16 @@
+body {
+    background-image: url("down.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-size: xx-large;
+    text-align: center;
+}
+
+#t1 {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(236, 242, 224);
+    border-radius: 6px;
+
+}

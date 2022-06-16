@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="downloadfile.css" />
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>downloading file from API</title>
+
+</head>
+
+<body>
+    click here to downlaod a file
+    <div class="card">
+        <a id="a1" download="file1.txt"> <button id="t1">click here</button></a>
+    </div>
+    <script>
+
+        const a1 = document.getElementById("a1");
+
+        const blob1 = new Blob(["Welcome to our page"], { type: "text/plain" })
+
+        a1.href = URL.createObjectURL(blob1);
+
+    </script>
+
+</body>
+
+</html>
